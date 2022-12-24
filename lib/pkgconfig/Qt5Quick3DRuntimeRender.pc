@@ -1,0 +1,13 @@
+prefix=/usr/local/Qt-5.15.2-64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/lib/QtQuick3DRuntimeRender.framework/Headers
+
+
+Name: Qt5 Quick3DRuntimeRender
+Description: Qt Quick3DRuntimeRender module
+Version: 5.15.2
+Libs: -F${libdir} -framework QtQuick3DRuntimeRender 
+Cflags: -DQT_QUICK3DRUNTIMERENDER_LIB -I${includedir} -F${libdir}
+Requires: Qt5Core Qt5Gui Qt5Quick3DRender Qt5Quick3DAssetImport Qt5Quick3DUtils
+

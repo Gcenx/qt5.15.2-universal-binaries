@@ -1,0 +1,13 @@
+prefix=/usr/local/Qt-5.15.2-64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/lib/QtQuick3DRender.framework/Headers
+
+
+Name: Qt5 Quick3DRender
+Description: Qt Quick3DRender module
+Version: 5.15.2
+Libs: -F${libdir} -framework QtQuick3DRender 
+Cflags: -DQT_QUICK3DRENDER_LIB -I${includedir} -F${libdir}
+Requires: Qt5Core Qt5Gui Qt5Quick3DUtils Qt5Quick
+

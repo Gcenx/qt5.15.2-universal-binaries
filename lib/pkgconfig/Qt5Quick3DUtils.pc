@@ -1,0 +1,13 @@
+prefix=/usr/local/Qt-5.15.2-64
+exec_prefix=${prefix}
+libdir=${prefix}/lib
+includedir=${prefix}/lib/QtQuick3DUtils.framework/Headers
+
+
+Name: Qt5 Quick3DUtils
+Description: Qt Quick3DUtils module
+Version: 5.15.2
+Libs: -F${libdir} -framework QtQuick3DUtils 
+Cflags: -DQT_QUICK3DUTILS_LIB -I${includedir} -F${libdir}
+Requires: Qt5Core Qt5Gui
+
