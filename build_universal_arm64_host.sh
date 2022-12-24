@@ -1,8 +1,9 @@
-# TODO grab MacOSX11.0.sdk and put in /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs 
+# TODO grab MacOSX11.3.sdk and put in /Library/Developer/CommandLineTools/SDKs
 # TODO change to fork of qt5 with patches on the 5.15.2 branch
 #!/usr/bin/env bash
 
 export JOBS="-j$(sysctl -n hw.activecpu)"
+#export SDKROOT="/Library/Developer/CommandLineTools/SDKs/MacOSX11.3.SDK
 
 git clone git://code.qt.io/qt/qt5.git
 cd qt5
